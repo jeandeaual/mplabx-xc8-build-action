@@ -4,8 +4,8 @@ This action will build a MPLAB X project.
 
 It runs on Linux Ubuntu 20.04 and uses:
 
-* MPLAB X v5.45
-* XC8 v1.34
+* [MPLAB X](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-x-ide) v5.45
+* [XC8](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-xc-compilers) v1.34
 
 ## Inputs
 
@@ -28,8 +28,12 @@ Add the following `.github/workflows/build.yml` file to your project:
 ```yaml
 name: Build
 on:
-  - push
-
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
 jobs:
   build:
     name: Build project
