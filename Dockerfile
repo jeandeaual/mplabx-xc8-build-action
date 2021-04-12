@@ -21,7 +21,7 @@ RUN wget -nv -O /tmp/mplabx "https://ww1.microchip.com/downloads/en/DeviceDoc/MP
   cd /tmp && \
   tar -xf mplabx && \
   rm mplabx && \
-  mv "MPLAB-v${MPLABX_VERSION}-linux-installer.sh" mplabx && \
+  mv "MPLABX-v${MPLABX_VERSION}-linux-installer.sh" mplabx && \
   sudo ./mplabx --nox11 -- --unattendedmodeui none --mode unattended --ipe 0 --collectInfo 0 --installdir /opt/mplabx && \
   rm mplabx
 
