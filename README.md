@@ -1,6 +1,6 @@
 # Build with MPLAB X and XC8 GitHub Action
 
-This action will build a MPLAB X project.
+This action will build a MPLAB X / XC8 project.
 
 It runs on Linux Ubuntu 20.04 and uses:
 
@@ -11,7 +11,7 @@ It runs on Linux Ubuntu 20.04 and uses:
 
 ### `project`
 
-**Required** The path of the projec to build (relative to the repository). For example: `firmware.X`.
+**Required** The path of the project to build (relative to the repository). For example: `firmware.X`.
 
 ### `configuration`
 
@@ -36,12 +36,12 @@ on:
       - master
 jobs:
   build:
-    name: Build project
+    name: Build the project
     runs-on: ubuntu-latest
     steps:
-      - name: Download source
+      - name: Download the source code
         uses: actions/checkout@v1
-      - name: Build library
+      - name: Build
         uses: jeandeaual/mplabx-xc8-build-action@master
         with:
           project: firmware.X
@@ -50,4 +50,4 @@ jobs:
 
 # Acknowledgements
 
-Inspired by https://github.com/velocitek/ghactions-mplabx
+Inspired by <https://github.com/velocitek/ghactions-mplabx>.
