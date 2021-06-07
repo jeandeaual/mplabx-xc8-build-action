@@ -5,7 +5,7 @@ This action will build a MPLAB X / XC8 project.
 It runs on Linux Ubuntu 20.04 and uses:
 
 * [MPLAB X](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-x-ide) v5.45
-* [XC8](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-xc-compilers) v2.20
+* [XC8](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-xc-compilers) v1.34
 
 ## Inputs
 
