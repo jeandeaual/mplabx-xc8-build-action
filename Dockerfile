@@ -1,7 +1,7 @@
 FROM ubuntu:20.04
 
 ARG MPLABX_VERSION=5.45
-ARG XC8_VERSION=2.20
+ARG XC8_VERSION=1.34
 
 # Install the dependencies
 # See https://microchipdeveloper.com/install:mplabx-lin64
