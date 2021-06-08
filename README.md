@@ -2,11 +2,6 @@
 
 This action will build a MPLAB X / XC8 project.
 
-It runs on Linux Ubuntu 20.04 and uses:
-
-* [MPLAB X](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-x-ide) v5.45
-* [XC8](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-xc-compilers) v1.34
-
 ## Inputs
 
 ### `project`
@@ -16,6 +11,14 @@ It runs on Linux Ubuntu 20.04 and uses:
 ### `configuration`
 
 The configuration of the project to build. Defaults to `default`.
+
+### `mplab_x_version`
+
+The version of [MPLAB X](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-x-ide) to use. Defaults to `5.45`.
+
+### `xc8_version`
+
+The version of the [XC8 compiler](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-xc-compilers) to use. Defaults to `1.34`.
 
 ## Outputs
 
@@ -46,6 +49,8 @@ jobs:
         with:
           project: firmware.X
           configuration: default
+          mplab_x_version: "5.45"
+          xc8_version: "2.20"
 ```
 
 # Acknowledgements

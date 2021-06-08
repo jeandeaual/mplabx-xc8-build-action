@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Building project $1:$2 with MPLAB X v5.45 and XC8 v1.34"
+echo "Building project $1:$2"
 
 set -x -e
 
