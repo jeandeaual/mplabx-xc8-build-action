@@ -15,4 +15,4 @@ docker build \
     --build-arg MPLABX_VERSION="${MPLABX_VERSION}" \
     --build-arg XC8_VERSION="${XC8_VERSION}" \
     . \
-    && docker run docker-action
+    && docker run docker-action "${PROJECT}" "${CONFIGURATION}"
