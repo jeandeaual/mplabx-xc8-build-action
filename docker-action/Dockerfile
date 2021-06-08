@@ -29,4 +29,6 @@ RUN wget -nv -O /tmp/mplabx "https://ww1.microchip.com/downloads/en/DeviceDoc/MP
 
 COPY build.sh /build.sh
 
+RUN ["chmod", "+x", "/build.sh"]
+
 ENTRYPOINT [ "/build.sh" ]
