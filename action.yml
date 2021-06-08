@@ -11,7 +11,7 @@ inputs:
     description: Configuration to build
     required: true
     default: default
-  mplab_x_version:
+  mplabx_version:
     description: Version of MPLAB X to use
     required: true
     default: "5.45"
@@ -23,7 +23,7 @@ runs:
   using: docker
   image: Dockerfile
   args:
-    - ${{ inputs.mplab_x_version }}
+    - ${{ inputs.mplabx_version }}
     - ${{ inputs.xc8_version }}
     - ${{ inputs.project }}
     - ${{ inputs.configuration }}

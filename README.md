@@ -12,7 +12,7 @@ This action will build a MPLAB X / XC8 project.
 
 The configuration of the project to build. Defaults to `default`.
 
-### `mplab_x_version`
+### `mplabx_version`
 
 The version of [MPLAB X](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-x-ide) to use. Defaults to `5.45`.
 
@@ -49,7 +49,7 @@ jobs:
         with:
           project: firmware.X
           configuration: default
-          mplab_x_version: "5.45"
+          mplabx_version: "5.45"
           xc8_version: "2.20"
 ```
 
