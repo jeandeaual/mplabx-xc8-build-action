@@ -42,7 +42,7 @@ jobs:
       - name: Download the source code
         uses: actions/checkout@v1
       - name: Build
-        uses: jeandeaual/mplabx-xc8-build-action@master
+        uses: jeandeaual/mplabx-xc8-build-action@v0.2.0
         with:
           project: firmware.X
           configuration: default
