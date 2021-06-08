@@ -16,4 +16,4 @@ docker build \
     --build-arg XC8_VERSION="${XC8_VERSION}" \
     . \
     && cd .. \
-    && docker run docker-action -v "$(pwd):/app" "/app/${PROJECT}" "${CONFIGURATION}"
+    && docker run -v "$(pwd):/github/workspace" --workdir /github/workspace docker-action "${PROJECT}" "${CONFIGURATION}"
